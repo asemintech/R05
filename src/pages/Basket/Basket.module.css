@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@400;700&display=swap');
+
+.content {
+  display: flex;
+  justify-content: center;
+  margin: 110px 20px 0;
+  padding: 0;
+}
+
+.content_left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  overflow: auto;
+  width: 60%;
+  border-radius: 5px;
+}
+
+.basket_title {
+  align-self: center;
+  color: #000;
+  font-family: 'Urbanist', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  letter-spacing: 1px;
+  line-height: 30px;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.basket_subtitle {
+  width: 100%;
+  border-bottom: 1px solid #e5e5e5;
+  color: #000;
+  font-family: 'Urbanist', sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  letter-spacing: 1px;
+  line-height: 30px;
+  text-transform: uppercase;
+  margin: 20px 0;
+}
+
+.item {
+  display: flex;
+  width: 100%;
+  margin: 0 0 20px;
+}
+
+.image {
+  width: 30%;
+}
+
+.product_info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 50%;
+  margin: 0 20px;
+}
+
+.subtitle {
+  color: #757575;
+  font-family: 'Urbanist', sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  letter-spacing: 1px;
+  line-height: 30px;
+}
+
+.title {
+  color: #000;
+  font-family: 'Urbanist', sans-serif;
+  font-weight: 700;
+  font-size: 13px;
+  letter-spacing: 1px;
+  line-height: 30px;
+}
+
+.text {
+  color: #000;
+  font-family: 'Urbanist', sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  letter-spacing: 1px;
+  line-height: 30px;
+}
+
+.remove_btn {
+  background: transparent;
+  border: none;
+  color: #000;
+  font-family: 'Urbanist', sans-serif;
+  font-weight: 400;
+  text-decoration: underline;
+  font-size: 13px;
+  letter-spacing: 1px;
+  transition: opacity 0.3s;
+  margin: 15px 0 0;
+  padding: 0;
+  cursor: pointer;
+}
+.remove_btn:hover {
+  opacity: 0.4;
+}
+
+.product_quantity {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-self: center;
+  text-align: center;
+}
+
+.count_btns {
+  display: flex;
+  justify-content: center;
+}
+
+.count_btn {
+  background: transparent;
+  outline: none;
+  border: none;
+  color: #000;
+  font-family: 'Urbanist', sans-serif;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.content_right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 38%;
+  background: #f6f6f6;
+  border-radius: 5px;
+  margin-left: calc(100% - (60% + 38%));
+  padding: 20px;
+}
+
+.order_subtitle {
+  align-self: flex-start;
+  width: 100%;
+  border-bottom: 1px solid #e5e5e5;
+  color: #000;
+  font-family: 'Urbanist', sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  letter-spacing: 1px;
+  line-height: 30px;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.order_title {
+  font-family: 'Urbanist', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 1px;
+  margin: 40px 0;
+}
+
+.submit_btn {
+  align-self: center;
+  width: 80%;
+  background: #000;
+  border: none;
+  border-radius: 50px;
+  outline: none;
+  color: #fff;
+  font-family: 'Urbanist', sans-serif;
+  font-weight: 400;
+  font-size: 11px;
+  letter-spacing: 1px;
+  line-height: 20px;
+  text-transform: uppercase;
+  transition: all .3s;
+  margin: 0 0 20px;
+  padding: 13px 0;
+  cursor: pointer;
+}
+.submit_btn:hover {
+  font-weight: 700;
+}
+
+.cancel_btn {
+  outline: none;
+  text-decoration: none;
+  width: 80%;
+  background: #fff;
+  border: 1px solid #333;
+  border-radius: 50px;
+  color: #333;
+  font-family: 'Urbanist', sans-serif;
+  font-weight: 400;
+  font-size: 11px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: opacity .3s;
+  margin: 0 0 20px;
+  padding: 13px 0;
+  cursor: pointer;
+}
+.cancel_btn:hover {
+  opacity: 0.4;
+}

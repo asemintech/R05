@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@400;700&display=swap');
+
+.cart {
+  display: flex;
+  flex-direction: column;
+  align-self: flex-end;
+  text-align: end;
+  margin: 0 20px 20px;
+}
+
+.icon {
+  align-self: center;
+  width: 20px;
+  height: 20px;
+}
+
+.subtitle {
+  color: #000;
+  font-family: 'Urbanist', sans-serif;
+  font-weight: 400;
+  text-decoration: none;
+  font-size: 13px;
+  letter-spacing: 1px;
+  margin: 0;
+}
+
+.text {
+  color: #000;
+  font-family: 'Urbanist', sans-serif;
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 13px;
+  line-height: 20px;
+  letter-spacing: 1px;
+}

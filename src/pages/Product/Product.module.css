@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@400;700&display=swap');
+
+.item {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 110px 20px 0;
+}
+
+.content_left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  height: 540px;
+  background: #f6f6f6;
+  border-radius: 5px;
+}
+
+.image {
+  width: 100%;
+  height: 540px;
+}
+
+.content_right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 34%;
+  margin-left: calc(100% - (60% + 34%));
+}
+
+.title {
+  color: #000;
+  font-family: 'Urbanist', sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  letter-spacing: 1px;
+  line-height: 30px;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.description {
+  width: 100%;
+  border-bottom: 1px solid #cecece;
+  color: #757575;
+  font-family: 'Urbanist', sans-serif;
+  font-size: 13px;
+  line-height: 20px;
+  letter-spacing: 1px;
+  margin: 20px 0 0;
+  padding: 0 0 20px;
+}
+
+.text {
+  align-self: center;
+  font-family: 'Urbanist', sans-serif;
+  font-weight: 700;
+  font-size: 13px;
+  letter-spacing: 1px;
+  margin-top: 20px;
+}
+
+.btn_block {
+  align-self: center;
+  width: 100%;
+}
+
+.count_btns {
+  display: flex;
+  justify-content: center;
+}
+
+.count_btn {
+  background: transparent;
+  outline: none;
+  border: none;
+  color: #000;
+  font-family: 'Urbanist', sans-serif;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.add_btn {
+  width: 100%;
+  background: #000;
+  border: none;
+  border-radius: 50px;
+  outline: none;
+  color: #fff;
+  font-family: 'Urbanist', sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: all .3s;
+  margin: 20px 0;
+  padding: 13px;
+  cursor: pointer;
+}
+.add_btn:hover {
+  font-weight: 700;
+}
+
+.info {
+  align-self: center;
+  color: #000;
+  font-family: 'Urbanist', sans-serif;
+  font-weight: 400;
+  text-decoration: underline;
+  font-size: 13px;
+  letter-spacing: 1px;
+}

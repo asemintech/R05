@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@400;700&display=swap');
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 30vw;
+}
+
+.title {
+  font-family: 'Urbanist', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin: 20px 0;
+}
+
+.instruction {
+  align-self: flex-start;
+  color: #000;
+  font-family: 'Urbanist', sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  letter-spacing: 1px;
+}
+
+.error {
+  align-self: flex-start;
+  color: #d50001;
+  font-family: 'Urbanist', sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  letter-spacing: 1px;
+  margin: 5px 0;
+  padding: 0;
+}
+
+.submit_btn {
+  text-align: center;
+  outline: none;
+  text-decoration: none;
+  width: 45%;
+  background: #cccccc;
+  border: 1px solid #cccccc;
+  border-radius: 50px;
+  color: #fff;
+  font-family: 'Urbanist', sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: opacity 0.4s;
+  margin: 40px 0 0;
+  padding: 13px 0;
+  cursor: pointer;
+}
+.submit_btn:hover {
+  font-weight: 700;
+}

@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@400;700&display=swap');
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 110px 20px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 0 40px;
+}
+
+.image {
+  width: 390px;
+  height: 300px;
+  background: #f6f6f6;
+  transition: opacity 0.3s;
+}
+.image:hover {
+  opacity: 0.6;
+}
+
+.content_left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.subtitle {
+  color: #000;
+  font-family: 'Urbanist', sans-serif;
+  font-weight: 400;
+  text-decoration: none;
+  font-size: 13px;
+  letter-spacing: 1px;
+  margin: 13px 0;
+}
+
+.text {
+  font-family: 'Urbanist', sans-serif;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 20px;
+  letter-spacing: 1px;
+}
+
+.content_right {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+}
+
+.remove_btn {
+  height: 50px;
+  background: transparent;
+  border: none;
+  color: #000;
+  font-family: 'Urbanist', sans-serif;
+  font-weight: 400;
+  text-decoration: underline;
+  font-size: 13px;
+  letter-spacing: 1px;
+  transition: opacity 0.3s;
+  cursor: pointer;
+}
+.remove_btn:hover {
+  opacity: 0.6;
+}
+
+.buy_btn {
+  width: 50px;
+  height: 50px;
+  background: transparent;
+  border: 1px solid #e5e5e5;
+  border-radius: 50%;
+  transition: opacity 0.3s;
+  cursor: pointer;
+}
+.buy_btn:hover {
+  opacity: 0.6;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+}
+
+.info {
+  height: 50px;
+  color: #000;
+  font-family: 'Urbanist', sans-serif;
+  font-weight: 400;
+  text-decoration: underline;
+  font-size: 13px;
+  letter-spacing: 1px;
+}
