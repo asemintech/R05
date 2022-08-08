@@ -7,7 +7,7 @@ const Input = ({ label, name, type, value, onChange, placeholder }) => {
       <label className={styles.label}>{label}</label>
       <div className={styles.field}>
         <input
-          className={styles.control}
+          className={styles.input}
           name={name}
           type={type}
           value={value}

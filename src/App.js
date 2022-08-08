@@ -11,11 +11,11 @@ import NoMatch from './pages/NoMatch/NoMatch';
 
 const App = () => {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={'R05'}>
       <Provider store={store}>
         <Header />
         <Routes>
-          <Route path='/home' element={<Home />} />
+          <Route path='/' element={<Home />} />
           <Route path='/info' element={<Info />} />
           <Route path='/basket' element={<Basket />} />
           <Route path='/products/:id' element={<Product />} />

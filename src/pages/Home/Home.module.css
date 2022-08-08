@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@400;600&display=swap');
 
 .container {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin: 110px 20px;
+  margin: 120px 20px;
 }
 
 .card {
@@ -15,16 +15,12 @@
 }
 
 .image {
-  width: 390px;
-  height: 300px;
+  width: 28vw;
+  height: 44vh;
   background: #f6f6f6;
-  transition: opacity 0.3s;
-}
-.image:hover {
-  opacity: 0.6;
 }
 
-.content_left {
+.left {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -32,71 +28,61 @@
 }
 
 .subtitle {
-  color: #000;
+  color: #333;
   font-family: 'Urbanist', sans-serif;
   font-weight: 400;
   text-decoration: none;
   font-size: 13px;
   letter-spacing: 1px;
-  margin: 13px 0;
+  line-height: 40px;
+  transition: opacity 0.5s ease;
+  margin: 0;
+  cursor: pointer;
+}
+.subtitle:hover {
+  opacity: 0.4;
 }
 
 .text {
+  color: #333;
   font-family: 'Urbanist', sans-serif;
-  font-weight: 700;
+  font-weight: 600;
   font-size: 13px;
-  line-height: 20px;
   letter-spacing: 1px;
+  line-height: 13px;
 }
 
-.content_right {
+.right {
   display: flex;
   justify-content: flex-end;
   align-items: center;
   width: 100%;
 }
 
-.remove_btn {
-  height: 50px;
+.addBtn {
+  width: 40px;
+  height: 40px;
   background: transparent;
-  border: none;
-  color: #000;
-  font-family: 'Urbanist', sans-serif;
-  font-weight: 400;
-  text-decoration: underline;
-  font-size: 13px;
-  letter-spacing: 1px;
-  transition: opacity 0.3s;
-  cursor: pointer;
-}
-.remove_btn:hover {
-  opacity: 0.6;
-}
-
-.buy_btn {
-  width: 50px;
-  height: 50px;
-  background: transparent;
-  border: 1px solid #e5e5e5;
+  border: 0.5px solid #d6d6d6;
   border-radius: 50%;
-  transition: opacity 0.3s;
+  transition: opacity 0.5s ease;
   cursor: pointer;
 }
-.buy_btn:hover {
-  opacity: 0.6;
+.addBtn:hover {
+  opacity: 0.4;
 }
 
 .icon {
-  width: 20px;
-  height: 20px;
+  width: 17px;
+  height: 17px;
 }
 
 .info {
-  height: 50px;
-  color: #000;
+  height: 40px;
+  color: #333;
   font-family: 'Urbanist', sans-serif;
   font-weight: 400;
-  text-decoration: underline;
   font-size: 13px;
-  letter-spacing: 1px;
+  letter-spacing: 0.5px;
+  text-decoration: underline;
 }

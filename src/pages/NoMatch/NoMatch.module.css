@@ -1,15 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@400;600&display=swap');
 
 .container {
   display: flex;
   justify-content: center;
-  margin: 110px 20px;
+  margin: 120px 20px;
 }
 
 .text {
+  color: #333;
   font-family: 'Urbanist', sans-serif;
-  font-weight: 700;
+  font-weight: 400;
   font-size: 13px;
-  line-height: 20px;
   letter-spacing: 1px;
+  margin: 0;
 }

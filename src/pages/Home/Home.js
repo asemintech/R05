@@ -4,7 +4,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import styles from './Home.module.css';
 import { getUser } from '../../store/selectors';
 import { addItem } from '../../store/cartSlice';
-// import { getItems } from '../../API';
+import shoppingBagIcon from '../../icons/shopping-bag-icon.png';
 
 const Home = () => {
   const [items, setItems] = useState([]);
@@ -23,39 +23,35 @@ const Home = () => {
     dispatch(addItem({ item: item, count: 1 }));
   };
 
-  // const onClickAddItem = (item) => {
-  //   handleAddItem(item);
-  // };
-
   return (
     <div className={styles.container}>
       {items.map((item) => {
         return (
           <div className={styles.card} key={item.id}>
             <img className={styles.image} src={item.images} alt={item.title} />
-            <div className={styles.content_left}>
+            <div className={styles.left}>
               <Link className={styles.subtitle} to={`/products/${item.id}`}>
                 {item.title}
               </Link>
-              <span className={styles.text}>{`${item.price}`}</span>
+              <span className={styles.text}>${`${item.price}`}</span>
             </div>
             {user ? (
-              <div className={styles.content_right}>
+              <div className={styles.right}>
                 <button
-                  className={styles.buy_btn}
+                  className={styles.addBtn}
                   onClick={() => {
                     handleAddItem(item);
                   }}
                 >
                   <img
                     className={styles.icon}
-                    src='https://img.icons8.com/external-kiranshastry-lineal-kiranshastry/64/000000/external-shopping-bag-interface-kiranshastry-lineal-kiranshastry.png'
+                    src={shoppingBagIcon}
                     alt='Add'
                   />
                 </button>
               </div>
             ) : (
-              <div className={styles.content_right}>
+              <div className={styles.right}>
                 <p className={styles.info}>
                   Log in to add an item to your cart.
                 </p>

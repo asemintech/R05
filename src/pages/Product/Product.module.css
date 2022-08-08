@@ -1,115 +1,129 @@
-@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@200;400;600&display=swap');
 
 .item {
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  margin: 110px 20px 0;
+  margin: 120px 20px 0;
 }
 
-.content_left {
+.left {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 60%;
-  height: 540px;
   background: #f6f6f6;
-  border-radius: 5px;
 }
 
 .image {
   width: 100%;
-  height: 540px;
+  height: 75vh;
 }
 
-.content_right {
+.right {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  width: 34%;
-  margin-left: calc(100% - (60% + 34%));
+  width: 36%;
+  margin-left: calc(100% - (60% + 36%));
+}
+
+.tag {
+  color: #757575;
+  font-family: 'Urbanist', sans-serif;
+  font-weight: 200;
+  font-size: 13px;
+  letter-spacing: 1px;
+  line-height: 13px;
+  margin: 0 0 20px;
 }
 
 .title {
-  color: #000;
+  color: #333;
   font-family: 'Urbanist', sans-serif;
   font-weight: 400;
-  font-size: 22px;
-  letter-spacing: 1px;
-  line-height: 30px;
+  font-size: 16px;
+  letter-spacing: 2px;
+  line-height: 16px;
   text-transform: uppercase;
   margin: 0;
 }
 
 .description {
   width: 100%;
-  border-bottom: 1px solid #cecece;
+  border-bottom: 0.5px solid #d9d9d9;
   color: #757575;
   font-family: 'Urbanist', sans-serif;
+  font-weight: 400;
   font-size: 13px;
-  line-height: 20px;
   letter-spacing: 1px;
+  line-height: 20px;
   margin: 20px 0 0;
-  padding: 0 0 20px;
+  padding: 0 0 40px;
 }
 
 .text {
   align-self: center;
+  color: #333;
   font-family: 'Urbanist', sans-serif;
-  font-weight: 700;
+  font-weight: 600;
   font-size: 13px;
   letter-spacing: 1px;
-  margin-top: 20px;
+  margin: 40px 0;
 }
 
-.btn_block {
+.block {
   align-self: center;
   width: 100%;
 }
 
-.count_btns {
+.countBtns {
   display: flex;
   justify-content: center;
 }
 
-.count_btn {
+.countBtn {
+  width: 30px;
+  height: 30px;
   background: transparent;
+  border: 0.5px solid #333;
+  border-radius: 50%;
   outline: none;
-  border: none;
-  color: #000;
+  color: #333;
   font-family: 'Urbanist', sans-serif;
   font-weight: 400;
+  margin: 0 7.5px;
   cursor: pointer;
 }
 
-.add_btn {
+.addBtn {
   width: 100%;
-  background: #000;
-  border: none;
+  background: #333;
+  border: 0.5px solid #333;
   border-radius: 50px;
   outline: none;
-  color: #fff;
+  color: #e5e5e5;
   font-family: 'Urbanist', sans-serif;
   font-weight: 400;
-  font-size: 13px;
+  font-size: 11px;
   letter-spacing: 1px;
   text-transform: uppercase;
-  transition: all .3s;
   margin: 20px 0;
-  padding: 13px;
+  padding: 14px;
   cursor: pointer;
 }
-.add_btn:hover {
-  font-weight: 700;
+.addBtn:hover {
+  color: #fff;
 }
 
 .info {
   align-self: center;
-  color: #000;
+  color: #333;
   font-family: 'Urbanist', sans-serif;
   font-weight: 400;
   text-decoration: underline;
   font-size: 13px;
-  letter-spacing: 1px;
+  letter-spacing: 0.5px;
+  margin: 0;
 }

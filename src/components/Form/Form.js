@@ -15,14 +15,14 @@ const Form = ({ logIn }) => {
       logIn();
       setError('');
     } else {
-      setError('Please check your username and/or password');
+      setError('Please check your username and/or password.');
     }
   };
 
   return (
     <form className={styles.form} onSubmit={handleSubmit}>
       <h1 className={styles.title}>Log in</h1>
-      <p className={styles.instruction}>All fields are required.</p>
+      <p className={styles.instruction}>*All fields are required.</p>
       <Input
         name='username'
         type='text'
@@ -32,8 +32,8 @@ const Form = ({ logIn }) => {
       />
       <Input name='password' type='password' placeholder='12345678' required />
       <div className={styles.error}>{error}</div>
-      <button className={styles.submit_btn} type='submit'>
-        Sign In
+      <button className={styles.submitBtn} type='submit'>
+        Sign in
       </button>
     </form>
   );

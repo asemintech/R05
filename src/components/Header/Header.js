@@ -7,6 +7,7 @@ import { logIn, logOut } from '../../store/userSlice';
 import Cart from '../Cart/Cart';
 import Modal from '../Modal/Modal';
 import Form from '../Form/Form';
+import userIcon from '../../icons/user-icon.png';
 
 const Header = () => {
   const [modalActive, setModalActive] = useState(true);
@@ -18,7 +19,7 @@ const Header = () => {
   return (
     <div className={styles.header}>
       <div className={styles.left}>
-        <Link className={styles.item} to='/home'>
+        <Link className={styles.item} to='/'>
           Home
         </Link>
         <Link className={styles.item} to='/info'>
@@ -31,7 +32,7 @@ const Header = () => {
       {user ? (
         <div className={styles.right}>
           <button
-            className={styles.logout_btn}
+            className={styles.logoutBtn}
             onClick={() => {
               onClickLogOut();
             }}
@@ -45,14 +46,10 @@ const Header = () => {
       ) : (
         <div className={styles.right}>
           <button
-            className={styles.login_btn}
+            className={styles.loginBtn}
             onClick={() => setModalActive(true)}
           >
-            <img
-              className={styles.icon}
-              src='https://img.icons8.com/external-kiranshastry-lineal-kiranshastry/64/000000/external-user-interface-kiranshastry-lineal-kiranshastry-1.png'
-              alt='Log in'
-            />
+            <img className={styles.icon} src={userIcon} alt='Log in' />
           </button>
           <Modal
             className={styles.modal}

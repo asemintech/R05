@@ -16,7 +16,7 @@ const Modal = ({ active, setActive, children }) => {
         }
         onClick={onClickStop}
       >
-        <div className={styles.modal_content}>{children}</div>
+        <div className={styles.form}>{children}</div>
       </div>
     </div>
   );
