@@ -35,3 +35,19 @@
   align-items: center;
   padding: 60px;
 }
+
+@media all and (max-width: 912px) {
+  .content {
+    width: 60vw;
+  }
+}
+
+@media all and (max-width: 540px) {
+  .content {
+    width: 70vw;
+  }
+
+  .form {
+    padding: 20px;
+  }
+}

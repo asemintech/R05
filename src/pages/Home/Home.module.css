@@ -16,7 +16,6 @@
 
 .image {
   width: 28vw;
-  height: 44vh;
   background: #f6f6f6;
 }
 
@@ -40,7 +39,7 @@
   cursor: pointer;
 }
 .subtitle:hover {
-  opacity: 0.4;
+  opacity: 0.6;
 }
 
 .text {
@@ -60,8 +59,8 @@
 }
 
 .addBtn {
-  width: 40px;
-  height: 40px;
+  width: 50px;
+  height: 50px;
   background: transparent;
   border: 0.5px solid #d6d6d6;
   border-radius: 50%;
@@ -69,12 +68,12 @@
   cursor: pointer;
 }
 .addBtn:hover {
-  opacity: 0.4;
+  opacity: 0.6;
 }
 
 .icon {
-  width: 17px;
-  height: 17px;
+  width: 18px;
+  height: 18px;
 }
 
 .info {
@@ -85,4 +84,14 @@
   font-size: 13px;
   letter-spacing: 0.5px;
   text-decoration: underline;
+}
+
+@media all and (max-width: 540px) {
+  .container {
+    justify-content: center;
+  }
+
+  .image {
+    width: 100%;
+  }
 }

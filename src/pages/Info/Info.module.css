@@ -7,7 +7,7 @@
   justify-content: center;
   text-align: center;
   width: 100%;
-  height: 30vw;
+  height: 50vh;
   margin: 0;
 }
 
@@ -63,4 +63,32 @@
   font-size: 13px;
   letter-spacing: 1px;
   line-height: 1.5;
+}
+
+@media all and (max-width: 1280px) {
+  .cover {
+    height: 40vh;
+  }
+}
+
+@media all and (max-width: 912px) {
+  .cover {
+    height: 25vh;
+  }
+}
+
+@media all and (max-width: 540px) {
+  .cover {
+    height: 30vh;
+  }
+
+  .title {
+    font-size: 13px;
+    letter-spacing: 2px;
+  }
+
+  .text {
+    width: 100%;
+    font-size: 11px;
+  }
 }

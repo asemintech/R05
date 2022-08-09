@@ -112,7 +112,7 @@
   cursor: pointer;
 }
 .removeBtn:hover {
-  opacity: 0.4;
+  opacity: 0.6;
 }
 
 .quantity {
@@ -196,5 +196,58 @@
   cursor: pointer;
 }
 .cancelBtn:hover {
-  opacity: 0.4;
+  opacity: 0.6;
+}
+
+@media all and (max-width: 912px) {
+  .left {
+    width: 90%;
+  }
+
+  .submitBtn {
+    font-size: 9px;
+  }
+}
+
+@media all and (max-width: 540px) {
+  .content {
+    flex-direction: column;
+    align-items: center;
+    margin: 120px 20px 60px;
+  }
+
+  .left {
+    width: 100%;
+    margin: 0 0 40px;
+  }
+
+  .item {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .image {
+    width: 100%;
+  }
+
+  .info {
+    width: 100%;
+    margin: 20px 0 40px;
+  }
+
+  .subtitle,
+  .removeBtn {
+    align-self: center;
+  }
+
+  .right {
+    width: 90%;
+    margin: 0;
+    padding: 5%;
+  }
+
+  .submitBtn {
+    font-size: 11px;
+  }
 }

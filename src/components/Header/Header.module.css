@@ -24,6 +24,8 @@
   float: left;
   display: block;
   flex: 1;
+  display: flex;
+  justify-content: flex-start;
   background: transparent;
   border: none;
   text-decoration: none;
@@ -31,6 +33,7 @@
 }
 
 .item {
+  height: 11px;
   color: #333;
   font-family: 'Urbanist', sans-serif;
   font-weight: 400;
@@ -39,11 +42,11 @@
   text-decoration: none;
   text-transform: uppercase;
   transition: opacity 0.5s ease;
-  margin: 0 20px 0 0;
+  margin: 0 5% 0 0;
   cursor: pointer;
 }
 .item:hover {
-  opacity: 0.4;
+  opacity: 0.6;
 }
 
 .center {
@@ -87,17 +90,17 @@
   text-decoration: none;
   text-transform: uppercase;
   transition: opacity 0.5s ease;
-  margin: 0 20px 0 0;
+  margin: 0 5% 0 0;
   padding: 0;
   cursor: pointer;
 }
 .logoutBtn:hover {
-  opacity: 0.4;
+  opacity: 0.6;
 }
 
 .loginBtn {
-  width: 17px;
-  height: 17px;
+  width: 18px;
+  height: 18px;
   background: transparent;
   border: none;
   transition: opacity 0.5s ease;
@@ -106,12 +109,12 @@
   cursor: pointer;
 }
 .loginBtn:hover {
-  opacity: 0.4;
+  opacity: 0.6;
 }
 
 .icon {
-  width: 17px;
-  height: 17px;
+  width: 18px;
+  height: 18px;
 }
 
 .cart {
@@ -119,4 +122,37 @@
   background: transparent;
   border: none;
   text-decoration: none;
+}
+
+@media all and (max-width: 540px) {
+  .item,
+  .logoutBtn {
+    font-size: 8px;
+    letter-spacing: 1px;
+  }
+
+  .logo {
+    font-size: 13px;
+  }
+}
+
+@media all and (max-width: 280px) {
+  .left {
+    margin: 10px 0 0 10px;
+  }
+
+  .item,
+  .logoutBtn {
+    font-size: 6px;
+    letter-spacing: 0;
+    margin: 0 5px 0 0;
+  }
+
+  .logo {
+    font-size: 11px;
+  }
+
+  .right {
+    margin: 10px 10px 0 0;
+  }
 }

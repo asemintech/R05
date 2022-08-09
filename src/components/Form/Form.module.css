@@ -60,3 +60,19 @@
 .submitBtn:hover {
   opacity: 0.6;
 }
+
+@media all and (max-width: 912px) {
+  .form {
+    width: 40vw;
+  }
+}
+
+@media all and (max-width: 540px) {
+  .form {
+    width: 55vw;
+  }
+
+  .error {
+    font-size: 8px;
+  }
+}

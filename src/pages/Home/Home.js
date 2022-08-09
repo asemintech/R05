@@ -4,7 +4,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import styles from './Home.module.css';
 import { getUser } from '../../store/selectors';
 import { addItem } from '../../store/cartSlice';
-import shoppingBagIcon from '../../icons/shopping-bag-icon.png';
+import shoppingBagIcon from '../../icons/shopping-bag-icon-dark.png';
 
 const Home = () => {
   const [items, setItems] = useState([]);
